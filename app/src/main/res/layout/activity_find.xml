@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hgsil.find.FindActivity"
+    android:background="@color/background">
+    <RelativeLayout
+        android:id="@+id/find_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/find_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+
+            android:background="@mipmap/ic_back"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="找物品"
+            android:gravity="center"
+            android:textSize="@dimen/title"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/find_relative1"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:textCursorDrawable="@drawable/color_cursor"
+
+            android:background="@color/background"
+
+            android:id="@+id/find_what_edit"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:hint="描述:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textCursorDrawable="@drawable/color_cursor"
+
+            android:background="@color/background"
+            android:maxLength="11"
+            android:hint="联系电话:"
+            android:id="@+id/find_contact_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:id="@+id/find_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/circle_text"
+            android:text="发起"
+            android:textSize="@dimen/text_title"
+            android:textColor="#fff"
+            android:foreground = "?attr/selectableItemBackground"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

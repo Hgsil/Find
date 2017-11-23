@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">失物招领</string>
+    <string name="login">登录</string>
+    <string name="create">注册</string>
+</resources>

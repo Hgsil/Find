@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+        <RelativeLayout
+        android:id="@+id/main_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/main_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:text="记录"
+                android:textSize="@dimen/text_title"
+                android:textColor="#fff"
+                android:foreground = "?attr/selectableItemBackground"
+                />
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/main_tips"
+            android:layout_below="@+id/main_relative1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#666"
+            android:textSize="@dimen/text_title"
+            android:text="暂时没有内容"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/main_tips"
+            android:id="@+id/main_recycler"
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/main_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="40dp"
+            app:elevation="1dp"
+            android:src="@drawable/ic_add"
+            android:foreground = "?attr/selectableItemBackground"
+            app:backgroundTint="@color/colorPrimary"/>
+    </RelativeLayout>
+</layout>
